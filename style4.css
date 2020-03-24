@@ -1,0 +1,294 @@
+* {
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+    z-index: 1; 
+}
+
+.page1 {
+    background: darkslategrey url('picture1.jpg') no-repeat top center;
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.text {
+    color:white;
+    float: right;
+    vertical-align: middle;
+    text-align: left;
+    margin-right: 30px;
+    margin-top: 270px;
+    padding-left: 30px;
+    width: 600px;
+    position: relative;
+    z-index: 3;
+}
+
+.subtitle::before {
+    content: " ";
+    display: block;
+    background-color: white;
+    height: 3px;
+    width: 490px;
+    margin-bottom: 30px;
+}
+
+h1 {
+    font-size: 75px;
+    font-weight: 400;
+    font-family: "Oswald", sans-serif;
+    padding-right: 30px;
+    letter-spacing: 5px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 400;
+    font-family: "Roboto", sans-serif;
+    padding-right: 30px;
+}
+
+.page1::after {
+    content: " ";
+    display: block;
+    background-color: rgba(0, 0, 0, 0.4);
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 2;
+}
+
+.inside {
+    position: relative;
+    display: inline-block;
+}
+
+.down {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    position: fixed;
+    bottom: 40px;
+    left: 50%;
+}
+
+.inside::after {
+    content: " ";
+    display: inline-block;
+    background-color: white;
+    height: 30px;
+    width: 1px;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+}
+
+.page2 {
+    background-color: rgb(221, 201, 176);
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color:black;
+}
+
+.about {
+    padding-top: 35px;
+}
+
+.av {
+    background-color: white;
+    margin: 5px;
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgb(37, 37, 37);
+}
+
+.page3 {
+    background-color: lavender;
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 30px;
+    color:black;
+}
+
+.fbox {
+    display: -webkit-flex; 
+    display: flex; 
+}
+
+.copywriter, .teacher, .cor, .jun {
+    padding: 50px;
+    box-shadow: 5px 5px 10px rgb(37, 37, 37);
+}
+
+.cont {
+    float: bottom;
+    margin: 30px;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Light'), local('Oswald-Light'), url('Oswaldlight.woff2') format('woff2'), url('Oswaldlight.woff') format('woff'), url('Oswaldlight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Regular'), local('Oswald-Regular'), url('Oswaldregular.woff2') format('woff2'), url('Oswaldregular.woff') format('woff'), url('Oswaldregular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald DemiBold'), local('Oswald-DemiBold'), url('Oswalddemibold.woff2') format('woff2'), url('Oswalddemibold.woff') format('woff'), url('Oswalddemibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald RegularItalic'), local('Oswald-RegularItalic'), url('Oswaldregularitalic.woff2') format('woff2'), url('Oswaldregularitalic.woff') format('woff'), url('Oswaldregularitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald MediumItalic'), local('Oswald-MediumItalic'), url('Oswaldmediumitalic.woff2') format('woff2'), url('Oswaldmediumitalic.woff') format('woff'), url('Oswaldmediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald ExtraLightItalic'), local('Oswald-ExtraLightItalic'), url('Oswaldextralightitalic.woff2') format('woff2'), url('Oswaldextralightitalic.woff') format('woff'), url('Oswaldextralightitalic.ttf') format('truetype');
+    font-weight: 200;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald HeavyItalic'), local('Oswald-HeavyItalic'), url('Oswaldheavyitalic.woff2') format('woff2'), url('Oswaldheavyitalic.woff') format('woff'), url('Oswaldheavyitalic.ttf') format('truetype');
+    font-weight: 800;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Heavy'), local('Oswald-Heavy'), url('Oswaldheavy.woff2') format('woff2'), url('Oswaldheavy.woff') format('woff'), url('Oswaldheavy.ttf') format('truetype');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald LightItalic'), local('Oswald-LightItalic'), url('Oswaldlightitalic.woff2') format('woff2'), url('Oswaldlightitalic.woff') format('woff'), url('Oswaldlightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Medium'), local('Oswald-Medium'), url('Oswaldmedium.woff2') format('woff2'), url('Oswaldmedium.woff') format('woff'), url('Oswaldmedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald ExtraLight'), local('Oswald-ExtraLight'), url('Oswaldextralight.woff2') format('woff2'), url('Oswaldextralight.woff') format('woff'), url('Oswaldextralight.ttf') format('truetype');
+    font-weight: 200;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald BoldItalic'), local('Oswald-BoldItalic'), url('Oswaldbolditalic.woff2') format('woff2'), url('Oswaldbolditalic.woff') format('woff'), url('Oswaldbolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald DemiBoldItalic'), local('Oswald-DemiBoldItalic'), url('Oswalddemibolditalic.woff2') format('woff2'), url('Oswalddemibolditalic.woff') format('woff'), url('Oswalddemibolditalic.ttf') format('truetype');
+    font-weight: 600;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Oswald';
+    src: local('Oswald Bold'), local('Oswald-Bold'), url('Oswaldbold.woff2') format('woff2'), url('Oswaldbold.woff') format('woff'), url('Oswaldbold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin'), local('Roboto-Thin'), url('Robotothin.woff2') format('woff2'), url('Robotothin.woff') format('woff'), url('Robotothin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Thin Italic'), local('Roboto-ThinItalic'), url('Robotothinitalic.woff2') format('woff2'), url('Robotothinitalic.woff') format('woff'), url('Robotothinitalic.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light'), local('Roboto-Light'), url('Robotolight.woff2') format('woff2'), url('Robotolight.woff') format('woff'), url('Robotolight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Light Italic'), local('Roboto-LightItalic'), url('Robotolightitalic.woff2') format('woff2'), url('Robotolightitalic.woff') format('woff'), url('Robotolightitalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto'), local('Roboto-Regular'), url('Roboto.woff2') format('woff2'), url('Roboto.woff') format('woff'), url('Roboto.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Italic'), local('Roboto-Italic'), url('Robotoitalic.woff2') format('woff2'), url('Robotoitalic.woff') format('woff'), url('Robotoitalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium'), local('Roboto-Medium'), url('Robotomedium.woff2') format('woff2'), url('Robotomedium.woff') format('woff'), url('Robotomedium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Medium Italic'), local('Roboto-MediumItalic'), url('Robotomediumitalic.woff2') format('woff2'), url('Robotomediumitalic.woff') format('woff'), url('Robotomediumitalic.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold'), local('Roboto-Bold'), url('Robotobold.woff2') format('woff2'), url('Robotobold.woff') format('woff'), url('Robotobold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Bold Italic'), local('Roboto-BoldItalic'), url('Robotobolditalic.woff2') format('woff2'), url('Robotobolditalic.woff') format('woff'), url('Robotobolditalic.ttf') format('truetype');
+    font-weight: 700;
+    font-style: italic;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black'), local('Roboto-Black'), url('Robotoblack.woff2') format('woff2'), url('Robotoblack.woff') format('woff'), url('Robotoblack.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: local('Roboto Black Italic'), local('Roboto-BlackItalic'), url('Robotoblackitalic.woff2') format('woff2'), url('Robotoblackitalic.woff') format('woff'), url('Robotoblackitalic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+
